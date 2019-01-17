@@ -1,0 +1,112 @@
+@CHARSET "UTF-8";
+
+/*todoapp.css*/
+.todoappmain{
+    height:100vh;    
+}
+
+.todoappmain > * {
+  padding: 10px;
+}
+
+.main {
+  text-align: center;
+}
+
+.todolist{
+    display:flex;
+    flex-flow: row wrap;
+    flex:1 0 10%;
+    justify-content:center;
+    flex-start:center;
+    position:relative;
+    top:3em;
+}
+
+.addcomponent{
+    position:relative;
+    top:3em;
+    margin-left:20%;
+    width:100%;
+}
+.todoinput{
+    border: none;
+    margin:.5em;
+    padding:.6em;
+    width:50%;
+    outline:none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.todoaddbtn{
+    border:none;
+    width:5em;
+    padding:.6em;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background-color: blue;
+    color:white;
+}
+
+/*Edit css*/
+
+.editbox{
+    position:fixed;
+    flex-wrap:wrap; 
+    width:24em;
+    height:2.4em;
+    top: 50%;
+    left: 50%;
+    margin-top: -6em; /* Negative half of height. */
+    margin-left: -12em;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    z-index:1;
+}
+.updatebtn{
+    padding:.4em;
+    margin:.6em;
+    margin-left:1.38em;
+    background-color: blue;
+    color:white;
+    border:none;
+    font-style: italic;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.updatetxt{
+    padding:0.3em;
+    border:none;
+    width:21em;
+    border-bottom: 2px solid black;
+    margin:.6em;
+    text-align:left;
+    font-style: italic;
+    font-weight: bold;
+    background: transparent;
+}
+.updatetxt:focus{
+    outline:none;
+}
+
+
+@media screen and (max-width:720px){
+.addcomponent{
+    position:relative;
+    margin-left:10%;
+    width:100%;
+}
+.todolist{
+    justify-content:space-evenly;
+    align-items:center;
+}
+.updatetxt{
+    width:12.8em;
+    margin-left:.2em;
+}
+.editbox{
+    width:16em; 
+    margin-top: -6em; /* Negative half of height. */
+    margin-left: -9em;
+}
+.updatebtn{
+    margin-left:.3em;
+}
+}
