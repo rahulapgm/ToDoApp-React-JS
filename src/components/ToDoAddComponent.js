@@ -10,7 +10,6 @@ const ToDoAddComponent = (props) => {
             <input type="text" className="todoinput" placeholder={"Your TODO goes here.."} defaultValue={textValue} onKeyUp={e => {
                         if (e.key === 'Enter') {
                           props.handleAddTodo(textValue)
-                          e.target.value="";
                         }
                         textValue = e.target.value
                         //this.setState({addTodoText:e.target.value})
