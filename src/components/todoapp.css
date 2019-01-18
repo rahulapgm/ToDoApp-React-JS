@@ -52,7 +52,7 @@
 .editbox{
     position:fixed;
     flex-wrap:wrap; 
-    width:24em;
+    width:24.5em;
     height:2.4em;
     top: 50%;
     left: 50%;
@@ -64,7 +64,6 @@
 .updatebtn{
     padding:.4em;
     margin:.6em;
-    margin-left:1.38em;
     background-color: blue;
     color:white;
     border:none;
@@ -76,7 +75,7 @@
     border:none;
     width:21em;
     border-bottom: 2px solid black;
-    margin:.6em;
+    margin:1em;
     text-align:left;
     font-style: italic;
     font-weight: bold;
@@ -102,7 +101,7 @@
     margin-left:.2em;
 }
 .editbox{
-    width:16em; 
+    width:15em; 
     margin-top: -6em; /* Negative half of height. */
     margin-left: -9em;
 }
